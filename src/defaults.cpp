@@ -77,7 +77,7 @@ DefaultsData* getConfigDefaults()
     DefaultsData *const configData = new DefaultsData;
     AddDEF("OverlayDetail", 2);
     AddDEF("speechBubbleAlpha", 1.0F);
-    AddDEF("MostUsedServerName0", "server.themanaworld.org");
+    AddDEF("MostUsedServerName0", "server.elmlor.com");
     AddDEF("visiblenames", true);
     AddDEF("speech", static_cast<int>(BeingSpeech::NO_NAME_IN_BUBBLE));
     AddDEF("showgender", true);
@@ -300,7 +300,7 @@ DefaultsData* getConfigDefaults()
     AddDEF("rectangulartextures", false);
     AddDEF("networksleep", 0);
     AddDEF("newtextures", true);
-    AddDEF("videodetected", false);
+    AddDEF("videodetected", true);
     AddDEF("hideErased", false);
     AddDEF("enableDelayedAnimations", true);
     AddDEF("enableCompoundSpriteDelay", true);
@@ -422,20 +422,20 @@ DefaultsData* getBrandingDefaults()
     DefaultsData *const configData = new DefaultsData;
     AddDEF("wallpapersPath", "");
     AddDEF("wallpapersFile", "");
-    AddDEF("appName", "ManaPlus");
-    AddDEF("appIcon", "icons/manaplus");
-    AddDEF("loginMusic", "Magick - Real.ogg");
+    AddDEF("appName", "Elmlor");
+    AddDEF("appIcon", "icons/elmlor");
+    AddDEF("loginMusic", "elmlortitle.ogg");
     AddDEF("defaultServer", "");
     AddDEF("defaultPort", DEFAULT_PORT);
     AddDEF("defaultServerType", "tmwathena");
     AddDEF("onlineServerList",
-           "http://manaplus.org/serverlist.xml");
+           "http://elmlor.com/updates/serverlist.xml");
     AddDEF("onlineServerFile", "serverlistplus.xml");
-    AddDEF("appShort", "mana");
-    AddDEF("screenshots", "ManaPlus");
+    AddDEF("appShort", "Elmlor");
+    AddDEF("screenshots", "Elmlor");
     AddDEF("defaultUpdateHost", "");
     AddDEF("helpPath", "");
-    AddDEF("theme", "");
+    AddDEF("theme", "golden-delicious");
     AddDEF("font", "fonts/dejavusans.ttf");
     AddDEF("boldFont", "fonts/dejavusans-bold.ttf");
     AddDEF("particleFont", "fonts/dejavusans.ttf");

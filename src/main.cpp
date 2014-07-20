@@ -141,7 +141,7 @@ static void printHelp()
 
 static void printVersion()
 {
-    std::cout << strprintf("ManaPlus client %s", FULL_VERSION) << std::endl;
+    std::cout << strprintf("Elmlor client %s", FULL_VERSION) << std::endl;
 }
 
 static void parseOptions(const int argc, char *const argv[])

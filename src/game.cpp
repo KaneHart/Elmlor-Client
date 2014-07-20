@@ -510,13 +510,13 @@ bool Game::saveScreenshot(SDL_Surface *const screenshot)
     if (serverName.empty())
     {
         screenShortStr = strprintf("%s_Screenshot_%s_",
-            branding.getValue("appName", "ManaPlus").c_str(),
+            branding.getValue("appName", "Elmlor").c_str(),
             buffer);
     }
     else
     {
         screenShortStr = strprintf("%s_Screenshot_%s_%s_",
-            branding.getValue("appName", "ManaPlus").c_str(),
+            branding.getValue("appName", "Elmlor").c_str(),
             serverName.c_str(), buffer);
     }
 

@@ -231,7 +231,7 @@ void Dirs::initLocalDataDir()
         // Use Application Directory instead of .mana
         settings.localDataDir = std::string(PhysFs::getUserDir()) +
             "/Library/Application Support/" +
-            branding.getValue("appName", "ManaPlus");
+            branding.getValue("appName", "Elmlor");
 #elif defined __HAIKU__
         settings.localDataDir = std::string(PhysFs::getUserDir()) +
            "/config/data/Mana";
@@ -242,7 +242,7 @@ void Dirs::initLocalDataDir()
         settings.localDataDir.append("/Mana");
 #elif defined __ANDROID__
         settings.localDataDir = getSdStoragePath() + branding.getValue(
-            "appShort", "ManaPlus") + "/local";
+            "appShort", "Elmlor") + "/local";
 #elif defined __native_client__
         settings.localDataDir = _nacl_dir.append("/local");
 #else
@@ -287,7 +287,7 @@ void Dirs::initConfigDir()
 #elif defined __HAIKU__
         settings.configDir = std::string(PhysFs::getUserDir()) +
            "/config/settings/Mana" +
-           branding.getValue("appName", "ManaPlus");
+           branding.getValue("appName", "Elmlor");
 #elif defined WIN32
         settings.configDir = getSpecialFolderLocation(CSIDL_APPDATA);
         if (settings.configDir.empty())
@@ -301,7 +301,7 @@ void Dirs::initConfigDir()
         }
 #elif defined __ANDROID__
         settings.configDir = getSdStoragePath() + branding.getValue(
-            "appShort", "ManaPlus").append("/config");
+            "appShort", "Elmlor").append("/config");
 #elif defined __native_client__
         settings.configDir = _nacl_dir.append("/config");
 #else
@@ -454,7 +454,7 @@ void Dirs::initScreenshotDir()
             if (config.getBoolValue("useScreenshotDirectorySuffix"))
             {
                 const std::string configScreenshotSuffix =
-                    branding.getValue("screenshots", "ManaPlus");
+                    branding.getValue("screenshots", "Elmlor");
 
                 if (!configScreenshotSuffix.empty())
                 {

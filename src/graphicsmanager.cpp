@@ -505,7 +505,7 @@ SDL_Window *GraphicsManager::createWindow(const int w, const int h,
                                           const int bpp A_UNUSED,
                                           const int flags)
 {
-    return SDL_CreateWindow("ManaPlus", SDL_WINDOWPOS_UNDEFINED,
+    return SDL_CreateWindow("Elmlor", SDL_WINDOWPOS_UNDEFINED,
         SDL_WINDOWPOS_UNDEFINED, w, h, flags);
 }
 
