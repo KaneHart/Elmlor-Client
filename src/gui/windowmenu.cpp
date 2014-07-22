@@ -73,10 +73,10 @@ WindowMenu::WindowMenu(const Widget2 *const widget) :
         _("Who is online"), x, h, InputAction::WINDOW_ONLINE);
     // TRANSLATORS: short button name for help window.
     addButton(N_("HLP"),
-        _("Help"), x, h, InputAction::WINDOW_HELP);
+        _("Help"), x, h, InputAction::WINDOW_HELP, false);
     // TRANSLATORS: short button name for quests window.
     addButton(N_("QE"),
-        _("Quests"), x, h, InputAction::WINDOW_QUESTS);
+        _("Quests"), x, h, InputAction::WINDOW_QUESTS, false);
     // TRANSLATORS: short button name for bot checker window.
     addButton(N_("BC"),
         _("Bot checker"), x, h, InputAction::WINDOW_BOT_CHECKER, false);

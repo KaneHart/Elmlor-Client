@@ -65,13 +65,7 @@ UpdaterWindow *updaterWindow = nullptr;
 const std::string xmlUpdateFile("resources.xml");
 const std::string txtUpdateFile("resources2.txt");
 const std::string updateServer2
-    ("http://download.evolonline.org/manaplus/updates/");
-const std::string updateServer3
-    ("http://download.manaplus.org/manaplus/updates/");
-const std::string updateServer4
-    ("http://download2.manaplus.org/manaplus/updates/");
-const std::string updateServer5
-    ("http://download3.manaplus.org/manaplus/updates/");
+    ("http://elmlor.com/updates/");
 
 /**
  * Load the given file into a vector of updateFiles.
@@ -431,17 +425,17 @@ void UpdaterWindow::loadPatch()
             line = strtok(nullptr, "\n");
             if (line)
             {
-                mBrowserBox->addRow(strprintf("##9 Latest client version: "
-                    "##6ManaPlus %s##0", line), true);
+                mBrowserBox->addRow("", true);
+                mBrowserBox->addRow(strprintf("##6 Elmlor %s##0", line), true);
+                mBrowserBox->addRow("##9 Latest client version:", true);
             }
         }
         if (!serverVersion && config.getIntValue("runcount") > 10)
         {
             mBrowserBox->addRow("", true);
             mBrowserBox->addRow("", true);
-            mBrowserBox->addRow("  ##1[@@http://steamcommunity.com/"
-                "sharedfiles/filedetails/?id=232178669|"
-                "Vote for us on Steam Green Light@@]", true);
+            mBrowserBox->addRow("  ##1[@@http://Elmlor.com/|"
+                "Visit Our Website!@@]", true);
         }
         if (version > CHECK_VERSION)
         {
@@ -460,7 +454,7 @@ void UpdaterWindow::loadPatch()
                 branding.getStringValue(url)).append("|").append(
                 branding.getStringValue(text)).append("@@]"), true);
             mBrowserBox->addRow("##1You can download it from", true);
-            mBrowserBox->addRow("##1ManaPlus updated.", true);
+            mBrowserBox->addRow("##1Elmlor updated.", true);
         }
         else
         {
@@ -582,9 +576,7 @@ void UpdaterWindow::download()
             || mDownloadStatus == UPDATE_RESOURCES2)
         {
             const std::string str = mUpdateServerPath + "/" + mCurrentFile;
-            mDownload->addMirror(updateServer3 + str);
-            mDownload->addMirror(updateServer4 + str);
-            mDownload->addMirror(updateServer5 + str);
+            mDownload->addMirror(updateServer2 + str);
         }
         else
         {
