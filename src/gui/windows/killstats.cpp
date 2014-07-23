@@ -49,7 +49,7 @@ KillStats::KillStats() :
     AttributeListener(),
     mKillTimer(0),
     // TRANSLATORS: kill stats window button
-    mResetButton(new Button(this, _("Reset stats"), "reset", this)),
+//    mResetButton(new Button(this, _("Reset stats"), "reset", this)),
     // TRANSLATORS: kill stats window button
     mTimerButton(new Button(this, _("Reset timer"), "timer", this)),
     mLine1(nullptr),
@@ -150,8 +150,8 @@ KillStats::KillStats() :
     place(0, 13, mExpSpeed15Label, 6).setPadding(0);
     place(0, 14, mExpTime15Label, 6).setPadding(0);
 
-    place(5, 13, mTimerButton).setPadding(0);
-    place(5, 14, mResetButton).setPadding(0);
+    place(5, 14, mTimerButton).setPadding(0);
+//    place(5, 14, mResetButton).setPadding(0);
 
     loadWindowState();
     enableVisibleSound(true);

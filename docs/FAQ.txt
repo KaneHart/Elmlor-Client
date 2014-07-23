@@ -1,22 +1,4 @@
 F.A.Q.
 ------
 
-HELP
-
-Q: How to get help?
-
-A: The fastest way is to come on our IRC channel. There you can find a lot of
-   nice people that will help you until you solve your problem.
-
-     Server: irc.freenode.net  Channel: #manaplus.
-
-DEVELOPMENT
-
-Q: How can I contribute?
-
-A: There are a lot of ways:
-
-   - If you're a programmer, an artist or just willing to help in any way, you
-     can become part of the development team. Join our irc channel:
-
-       #manaplus @ irc.freenode.net.
+None

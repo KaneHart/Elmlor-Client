@@ -234,7 +234,7 @@ void Dirs::initLocalDataDir()
             branding.getValue("appName", "Elmlor");
 #elif defined __HAIKU__
         settings.localDataDir = std::string(PhysFs::getUserDir()) +
-           "/config/data/Mana";
+           "/config/data/Elmlor";
 #elif defined WIN32
         settings.localDataDir = getSpecialFolderLocation(CSIDL_LOCAL_APPDATA);
         if (settings.localDataDir.empty())
@@ -286,7 +286,7 @@ void Dirs::initConfigDir()
             + branding.getValue("appShort", "mana");
 #elif defined __HAIKU__
         settings.configDir = std::string(PhysFs::getUserDir()) +
-           "/config/settings/Mana" +
+           "/config/settings/Elmlor" +
            branding.getValue("appName", "Elmlor");
 #elif defined WIN32
         settings.configDir = getSpecialFolderLocation(CSIDL_APPDATA);
