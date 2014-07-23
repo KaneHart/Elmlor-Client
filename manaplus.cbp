@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Windows">
-				<Option output="elmlor.exe" prefix_auto="0" extension_auto="0" />
+				<Option output="../../Client/elmlor.exe" prefix_auto="0" extension_auto="0" />
 				<Option object_output=".objs/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
@@ -169,6 +169,8 @@
 		<Unit filename="src/flooritem.h" />
 		<Unit filename="src/game.cpp" />
 		<Unit filename="src/game.h" />
+		<Unit filename="src/gamemodifiers.cpp" />
+		<Unit filename="src/gamemodifiers.h" />
 		<Unit filename="src/graphicsmanager.cpp" />
 		<Unit filename="src/graphicsmanager.h" />
 		<Unit filename="src/graphicsvertexes.cpp" />
@@ -750,6 +752,7 @@
 		<Unit filename="src/net/generalhandler.h" />
 		<Unit filename="src/net/guildhandler.h" />
 		<Unit filename="src/net/inventoryhandler.h" />
+		<Unit filename="src/net/ipc.cpp" />
 		<Unit filename="src/net/logindata.h" />
 		<Unit filename="src/net/loginhandler.h" />
 		<Unit filename="src/net/messagehandler.h" />
@@ -1155,7 +1158,6 @@
 		<Unit filename="src/vector.cpp" />
 		<Unit filename="src/vector.h" />
 		<Unit filename="src/winver.h" />
-		<Unit filename="src/net/ipc.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
