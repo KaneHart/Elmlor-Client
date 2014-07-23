@@ -74,7 +74,7 @@ Desktop::Desktop(const Widget2 *const widget) :
             appName.c_str()));
     }
     mVersionLabel->addRow("copyright",
-        "About");
+        "(C) ManaPlus developers, http://manaplus.org");
     mVersionLabel->setLinkHandler(this);
 }
 
